@@ -1,0 +1,29 @@
+{
+    "name": "mrjokermr/dynamic-toasts",
+    "description": "Dynamic toasts for livewire",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mrjokermr\\DynamicToasts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Melle R"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "livewire/livewire": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrjokermr\\DynamicToasts\\DynamicToastsServiceProvider"
+            ],
+            "aliases": {
+                "DynamicToasts": "Mrjokermr\\DynamicToasts\\Facades\\DynamicToasts"
+            }
+        }
+    }
+}
