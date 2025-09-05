@@ -17,10 +17,22 @@ class ToastMessage implements Wireable
     )
     {
         $this->id = uuid_create();
-        $this->expiresAt = Carbon::now()->addSeconds(5)->toDateTimeString();
+        
+        $seconds = $this->getDefaultSeconds();
+        $this->expiresAt = Carbon::now()->addSeconds($seconds)->toDateTimeString();
 
         $showIcon = (bool) config('dynamic-toasts.default_value_show_icon');
         $this->showIcon = $showIcon;
+    }
+
+    private function getDefaultSeconds(): int
+    {
+        $configSeconds = config('dynamic-toasts.default_value_show_icon');
+        if ($configSeconds === null || trim($configSeconds) === '' || !is_numeric($configSeconds)) {
+            return 5;
+        }
+
+        return (int) $configSeconds;
     }
 
     public function setExpiresAtSeconds(int $seconds): self
