@@ -1,11 +1,11 @@
 <?php
 
-namespace Melle\DynamicToasts\Livewire;
+namespace Mrjokermr\DynamicToasts\Livewire;
 
 use Livewire\Attributes\On;
 use Livewire\Component;
-use Melle\DynamicToasts\Classes\ToastMessage;
-use Melle\DynamicToasts\Enums\ToastMessageType;
+use Mrjokermr\DynamicToasts\Classes\ToastMessage;
+use Mrjokermr\DynamicToasts\Enums\ToastMessageType;
 
 class DisplayDynamicToasts extends Component
 {

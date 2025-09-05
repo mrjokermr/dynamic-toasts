@@ -2,7 +2,7 @@
      style="pointer-events:none; position:fixed; top:0; right:0; bottom:0; left:0; z-index:100; display:flex; justify-content:flex-end; flex-direction:column;">
     <div style="height:5rem; width:100%; display:flex; justify-content:flex-end;">
         <div style="width:22rem; padding:0.75rem; display:flex; flex-direction:column-reverse; row-gap:0.5rem;">
-            @php /** @var \Melle\DynamicToasts\Classes\ToastMessage $message */ @endphp
+            @php /** @var \Mrjokermr\DynamicToasts\Classes\ToastMessage $message */ @endphp
             @foreach($messages as $message)
                 @php $styleClass = $message->getStyleClass(); @endphp
                 <div

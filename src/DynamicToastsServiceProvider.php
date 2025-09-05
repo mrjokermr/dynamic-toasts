@@ -1,10 +1,10 @@
 <?php
 
-namespace Melle\DynamicToasts;
+namespace Mrjokermr\DynamicToasts;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire;
-use Melle\DynamicToasts\Livewire\DisplayDynamicToasts;
+use Mrjokermr\DynamicToasts\Livewire\DisplayDynamicToasts;
 
 class DynamicToastsServiceProvider extends ServiceProvider
 {

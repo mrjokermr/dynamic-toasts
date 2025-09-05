@@ -1,10 +1,10 @@
 <?php
 
-namespace Melle\DynamicToasts\Classes;
+namespace Mrjokermr\DynamicToasts\Classes;
 
 use Carbon\Carbon;
 use Livewire\Wireable;
-use Melle\DynamicToasts\Enums\ToastMessageType;
+use Mrjokermr\DynamicToasts\Enums\ToastMessageType;
 
 class ToastMessage implements Wireable
 {

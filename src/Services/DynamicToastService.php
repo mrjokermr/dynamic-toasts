@@ -1,8 +1,8 @@
 <?php
 
-namespace Melle\DynamicToasts\Services;
+namespace Mrjokermr\DynamicToasts\Services;
 
-use Melle\DynamicToasts\Enums\ToastMessageType;
+use Mrjokermr\DynamicToasts\Enums\ToastMessageType;
 
 class DynamicToastService
 {

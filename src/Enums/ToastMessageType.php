@@ -1,6 +1,6 @@
 <?php
 
-namespace Melle\DynamicToasts\Enums;
+namespace Mrjokermr\DynamicToasts\Enums;
 
 enum ToastMessageType: string
 {
