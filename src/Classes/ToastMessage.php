@@ -27,7 +27,7 @@ class ToastMessage implements Wireable
 
     private function getDefaultSeconds(): int
     {
-        $configSeconds = config('dynamic-toasts.default_value_show_icon');
+        $configSeconds = config('dynamic-toasts.default_seconds');
         if ($configSeconds === null || trim($configSeconds) === '' || !is_numeric($configSeconds)) {
             return 5;
         }
