@@ -13,77 +13,7 @@ class DisplayDynamicToasts extends Component
     public array $messages = [];
 
     public function mount()
-    {
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::SUCCESS example",
-                type: ToastMessageType::SUCCESS,
-            ))->setExpiresAtSeconds(10)->toLivewire(),
-        );
-
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::SUCCESS example",
-                type: ToastMessageType::SUCCESS,
-            ))->setExpiresAtSeconds(10)->hideIcon()->toLivewire(),
-        );
-
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::FAILURE example",
-                type: ToastMessageType::FAILURE,
-            ))->setExpiresAtSeconds(10)->toLivewire(),
-        );
-
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::FAILURE example",
-                type: ToastMessageType::FAILURE,
-            ))->setExpiresAtSeconds(10)->hideIcon()->toLivewire(),
-        );
-
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::WARNING example",
-                type: ToastMessageType::WARNING,
-            ))->setExpiresAtSeconds(10)->toLivewire(),
-        );
-
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::WARNING example",
-                type: ToastMessageType::WARNING,
-            ))->setExpiresAtSeconds(10)->hideIcon()->toLivewire(),
-        );
-
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::INFO example",
-                type: ToastMessageType::INFO,
-            ))->setExpiresAtSeconds(10)->toLivewire(),
-        );
-
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::INFO example",
-                type: ToastMessageType::INFO,
-            ))->setExpiresAtSeconds(10)->hideIcon()->toLivewire(),
-        );
-
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::NEGATIVE example",
-                type: ToastMessageType::NEGATIVE,
-            ))->setExpiresAtSeconds(10)->toLivewire(),
-        );
-
-        $this->addDynamicToastMessage(
-            toastMessage: (new ToastMessage(
-                message: "ToastMessageType::NEGATIVE example",
-                type: ToastMessageType::NEGATIVE,
-            ))->setExpiresAtSeconds(10)->hideIcon()->toLivewire(),
-        );
-    }
+    {}
 
     #[On(self::NEW_TOAST_EVENT)]
     public function addDynamicToastMessage(array $toastMessage)
