@@ -3,7 +3,7 @@
 
 **Simple Livewire 3 toast messages package**
 
-Uses native inline css styling for compatability.
+Compatible with any css framework & no CDN requirements. (Uses native inline css styling & svg icons.)
 
 ![Example](https://imgur.com/3Qv0Grn.png)
 ## Installation
