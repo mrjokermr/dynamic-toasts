@@ -9,7 +9,7 @@
                     @if (isset($styleClass))
                         class="{!! $styleClass !!}"
                     @else
-                        style="pointer-events:auto; width:100%; font-size:0.875rem; padding:0.5rem; border-radius:0.375rem; box-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05); background-color: {{ $message->getBackgroundHexColor() }};">
+                        style="pointer-events:auto; width:auto; max-width:22rem; font-size:0.875rem; padding:0.5rem; border-radius:0.375rem; box-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05); background-color: {{ $message->getBackgroundHexColor() }};">
                     @endif
                     <div style="color: {{ $message->getTextHexColor() }}; position: relative; display: flex; column-gap: 0.5rem;">
                         @if ($message->showIcon)
